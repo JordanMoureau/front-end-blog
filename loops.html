@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Front-End Dev Blog</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/jpg" href="images/favi-01.png"/>
+</head>
+<div class="container">
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  TOPICS
+
+  <div class="topics"><a href="js.html">Java Script</a><br>
+    <a href="design.html">Web Design</a><br>
+    <a href="HTML.html">HTML</a><br>
+    <a href="css.html">CSS</a><br>
+    <a href="debug.html">Debugging</a><br>
+    <a href="react.html">React</a><br>
+    <a href="genius.html">Genius Plan</a></div>
+
+  <div class="basic-links"><a href="aboutme.html">ABOUT ME</a><a href="archive.html"><br>ARCHIVE</a></div>
+</div>
+
+  <div class="header"><div class="header-width-constraint"><a href="index.html">Not Another Front-End Engineer Blog</a></div></div>
+  <div class="goals"><div class="goalheader">GOAL</div>change my career in six months <div class="weeks-left">Weeks Left</div></div>
+  <div class="goals-countdown">13</div>
+  <div class="hamburger" onclick="openNav()">&#9776; </div>  
+
+  <div class="sidebar">TOPICS
+
+      <div class="topics"><a href="js.html">Java Script</a><br>
+        <a href="design.html">Web Design</a><br>
+        <a href="HTML.html">HTML</a><br>
+        <a href="css.html">CSS</a><br>
+        <a href="debug.html">Debugging</a><br>
+        <a href="react.html">React</a><br>
+        <a href="genius.html">Genius Plan</a></div>
+
+      <div class="basic-links"><a href="aboutme.html">ABOUT ME</a><a href="archive.html"><br>ARCHIVE</a></div>
+
+      <div class="social-links">
+        <div class="social-icons"><a href="https://pin.it/64b7EMR" target="_blank"><img src="images/pinterest.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://www.instagram.com/jordanfromnovember/" target="_blank"><img src="images/instagram.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://github.com/JordanMoureau" target="_blank"><img src="images/github.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://www.behance.net/jordanfrome169" target="_blank"><img src="images/behance.png" width="27px" height="27px"></a></div>
+
+      </div>
+  </div>
+
+  <div class="article"> <h2>Javascript Loops</h2><br><br>
+This one really won't make sense in my head. I've tried very hard to make it. So I'm just going to try and break it down for myself here.<br><br>
+Understanding the purpose of loops isn't too difficult. They run the code over and over until they reach a certain point. If a conditional isn't specified or it's incorrect or it's somehow unattainable (?) then you get stuck with an infinite loop which basically just breaks everything. Bad.
+
+<xmp>for (let i = 0; i < 9; i++) { console.log(i); }</xmp>
+
+Super basic loop. Prints numbers 0 to 8. So it asks the question what number and it finds the answer again and again until it reaches the conditional which is 9, only numbers less than 9.
+
+So we have the initialization statement <xmp>let i = 0;</xmp>
+The condition <xmp>i < 9;</xmp>
+And the final expression <xmp>i++</xmp>
+
+We have your basic beginning, end and action items. The last one confuses me still a bit so lets break it down. I know it can be <xmp>i++</xmp> and <xmp>i--</xmp> so let run a test to see the difference between them. I'm going to import my simple counting loop into codecademy <a href="https://www.codecademy.com/pages/workspaces" target="_blank">workspaces</a>.
+
+I ran it with a minus minus and it got stuck in an infinte loop. Then I swapped the numbers and switch the greater than sign to a less than sign and it counted the numbers backward from 9 down.
+<br><br>
+w3 schools calls this last expression the increment value of the initial variable. But it can be optional. 
+<br><br>
+So I wouldn't say that loops and how to use them make complete sense to me yet, but I think this is a good start breaking them down. Next I'll watch a youtube tutorial and come back to report more findings with a new article. 
+<br><br>
+Cheers!
+
+
+</div>
+
+
+  <div class="footer">
+    <div class="foot-width-constraint">
+      <div class="prev"><a href="fizzbuzz.html">prev</a></div>
+      <div class="date">4.13.23</div>
+      <div class="next"><a href="favcss.html">next</a></div>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</div>
+</html>

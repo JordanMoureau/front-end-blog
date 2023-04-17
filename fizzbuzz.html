@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Front-End Dev Blog</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/jpg" href="images/favi-01.png"/>
+</head>
+<div class="container">
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  TOPICS
+
+  <div class="topics"><a href="js.html">Java Script</a><br>
+    <a href="design.html">Web Design</a><br>
+    <a href="HTML.html">HTML</a><br>
+    <a href="css.html">CSS</a><br>
+    <a href="debug.html">Debugging</a><br>
+    <a href="react.html">React</a><br>
+    <a href="genius.html">Genius Plan</a></div>
+
+  <div class="basic-links"><a href="aboutme.html">ABOUT ME</a><a href="archive.html"><br>ARCHIVE</a></div>
+</div>
+
+  <div class="header"><div class="header-width-constraint"><a href="index.html">Not Another Front-End Engineer Blog</a></div></div>
+  <div class="goals"><div class="goalheader">GOAL</div>change my career in six months <div class="weeks-left">Weeks Left</div></div>
+  <div class="goals-countdown">13</div>
+  <div class="hamburger" onclick="openNav()">&#9776; </div>  
+
+  <div class="sidebar">TOPICS
+
+      <div class="topics"><a href="js.html">Java Script</a><br>
+        <a href="design.html">Web Design</a><br>
+        <a href="HTML.html">HTML</a><br>
+        <a href="css.html">CSS</a><br>
+        <a href="debug.html">Debugging</a><br>
+        <a href="react.html">React</a><br>
+        <a href="genius.html">Genius Plan</a></div>
+
+      <div class="basic-links"><a href="aboutme.html">ABOUT ME</a><a href="archive.html"><br>ARCHIVE</a></div>
+
+      <div class="social-links">
+        <div class="social-icons"><a href="https://pin.it/64b7EMR" target="_blank"><img src="images/pinterest.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://www.instagram.com/jordanfromnovember/" target="_blank"><img src="images/instagram.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://github.com/JordanMoureau" target="_blank"><img src="images/github.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://www.behance.net/jordanfrome169" target="_blank"><img src="images/behance.png" width="27px" height="27px"></a></div>
+
+      </div>
+  </div>
+
+  <div class="article"> <h2>Fizz Buzz</h2><br><br>
+    This piece of JS is a classic and now apparently exceedingly well known, interview question. Made famous because I suppose google uses it in their interviews. It's completely useless, but does demonstrate problem solving skills.
+
+<xmp>function fizzy(){
+  for(i=0; i <= 100; i++){
+    if (i % 15 == 0){
+      console.log("FizzBuzz")
+    } else if(i % 5 == 0){
+      console.log("Buzz")
+    } else if (i % 3 == 0){
+      console.log("Fizz")
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+fizzy();</xmp>
+
+This is it. Essentially what it accomplishes is replacing numbers divisible by 3 and 5 with the string 'FizzBuzz'. Numbers divisible by 3 return Fizz and numbers divisible by 5, Buzz. Then if the number isn't divisible by either 3 or 5 it just returns the number making a cute little pattern of numbers and fizzes and buzzes.
+
+How it works. Well I don't really know so lets figure it out together line by line.
+
+<xmp>function fizzy()</xmp>
+
+The first line is easy, lets start there. We're creating a function we can call on that will encapsulate the equation we're creating. Relevant name= Fizzy.
+
+<xmp>for(i=0; i<= 100; i++)</xmp>
+
+Okay this is also pretty easy. We're creating a loop. Which will just cycle through the code until it reaches the end. For a more concise explanation of loops go to <a href="loops.html">here.</a> <br><br>
+
+We're telling it to keep going until it reaches 100. 
+
+<xmp>if(i % 15 ==0)</xmp>
+
+So this line says if the remainder of i (modulo, the % calculates for the remainer of a number) out of 15 is equal to 0 then
+
+<xmp>console.log("FizzBuzz")</xmp>
+
+Obviously 15 is divisible by both 3 and 5 so that would return both our catch phrases and the log would read FizzBuzz.
+
+<xmp>else if(i% 5 == 0) { console.log("buzz") }</xmp>
+
+Modulo calculates for the remainder and if it equals 0 then buzz is appropriate and we print that to the console log.
+
+<xmp>else if (i % 3 == 0) { console.log("fizz") }</xmp>
+
+Here we ask it to calculate for the zero remainder out of 3 and print fizz if it returns true.
+
+Lastly,
+<xmp> else { console.log(i); }</xmp>
+prints all other variables as just plain old numbers.
+
+ and actually last of all.
+ <xmp> fizzy();</xmp>
+ Calls our function to real life and runs fizz buzz. <br><br>
+
+ Okay! Well, that makes more sense to me now. How about you?
+
+
+</div>
+
+
+  <div class="footer">
+    <div class="foot-width-constraint">
+      <div class="prev"><a href="fizzbuzz.html">prev</a></div>
+      <div class="date">4.13.23</div>
+      <div class="next"><a href="genius.html">next</a></div>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</div>
+</html>

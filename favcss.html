@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Front-End Dev Blog</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/jpg" href="images/favi-01.png"/>
+</head>
+<div class="container">
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  TOPICS
+
+  <div class="topics"><a href="js.html">Java Script</a><br>
+    <a href="design.html">Web Design</a><br>
+    <a href="HTML.html">HTML</a><br>
+    <a href="css.html">CSS</a><br>
+    <a href="debug.html">Debugging</a><br>
+    <a href="react.html">React</a><br>
+    <a href="genius.html">Genius Plan</a></div>
+
+  <div class="basic-links"><a href="aboutme.html">ABOUT ME</a><a href="archive.html"><br>ARCHIVE</a></div>
+</div>
+
+  <div class="header"><div class="header-width-constraint"><a href="index.html">Not Another Front-End Engineer Blog</a></div></div>
+  <div class="goals"><div class="goalheader">GOAL</div>change my career in six months <div class="weeks-left">Weeks Left</div></div>
+  <div class="goals-countdown">13</div>
+  <div class="hamburger" onclick="openNav()">&#9776; </div>  
+
+  <div class="sidebar">TOPICS
+
+      <div class="topics"><a href="js.html">Java Script</a><br>
+        <a href="design.html">Web Design</a><br>
+        <a href="HTML.html">HTML</a><br>
+        <a href="css.html">CSS</a><br>
+        <a href="debug.html">Debugging</a><br>
+        <a href="react.html">React</a><br>
+        <a href="genius.html">Genius Plan</a></div>
+
+      <div class="basic-links"><a href="aboutme.html">ABOUT ME</a><a href="archive.html"><br>ARCHIVE</a></div>
+
+      <div class="social-links">
+        <div class="social-icons"><a href="https://pin.it/64b7EMR" target="_blank"><img src="images/pinterest.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://www.instagram.com/jordanfromnovember/" target="_blank"><img src="images/instagram.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://github.com/JordanMoureau" target="_blank"><img src="images/github.png" width="27px" height="27px"></a></div>
+        <div class="social-icons"><a href="https://www.behance.net/jordanfrome169" target="_blank"><img src="images/behance.png" width="27px" height="27px"></a></div>
+
+      </div>
+  </div>
+
+  <div class="article"> <h2>My favorite CSS things</h2><br><br>
+    What designer isn't in love with css? My favorite thing is when I think I'm going to have to make an image for something then I find out css can do it. Like for my portfolio I have sideways text and I was thinking I'd have to do it with an image, nope. WRITING MODE HERO TIME! <br><br>The first mention here has to be the universal variable though. Which applies a style to the entire webpage. Super fun, but not to be oded on. 
+    <xmp> * { font-family: dingbats }</xmp>
+    (use responsibly)
+    <br><br>
+    Next might as well be writing mode!
+    <xmp> .header{
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        transform: rotate(-180deg);
+    }
+    </xmp>
+I added the rotate in there because I wanted my text flipped for this particular design. text orientation will define how the characters are written out. As in on top of eachother or side by side. Mixed is side by side and upright is a column of letters. Then writing mode is of course vertical, the lr at the end is left to right and can be right to left instead. 
+
+<xmp>.social{
+    border-top: 10px dashed #FF597B;
+}
+</xmp>
+
+I love single line borders, and dashes and dots. I use them probably too much. But the control is nice. I don't have to cut myself up an image and try and position absolute it correctly somewhere.
+
+<xmp> .sidebar{
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+}
+</xmp>
+
+This is a nifty little trick I figured out (ALL BY MYSELF) to get a height to work properly for this site actually. Position absolute something with a top and bottom value and it maintains integrity through all sizes, stretching to the top and bottom without a pixel height. It just magnets it to the top and bottom. I was trying to figure out how to do this one night and I fell asleep trying to deicde between pixels or percentages and I woke up the next morning like OMG why don't we just put a top AND a bottom on it. Worked like a charm.<br><br>
+
+Just some basic fun things I like. Will add more to this as time goes.
+<br><br>
+
+
+
+
+
+</div>
+
+
+  <div class="footer">
+    <div class="foot-width-constraint">
+      <div class="prev"><a href="loops.html">prev</a></div>
+      <div class="date">4.13.23</div>
+      <div class="next"><a href="fizzbuzz.html">next</a></div>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</div>
+</html>
